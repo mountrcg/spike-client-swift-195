@@ -10,6 +10,8 @@ import HealthKit
 
 
 public class SpikeClientManager: CGMManager {
+    public var delegateQueue: DispatchQueue!
+    
     public static var managerIdentifier = "DexSpikeClient1"
 
     public init() {
